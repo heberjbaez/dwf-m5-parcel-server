@@ -39,7 +39,7 @@ export function initRouter(container: Element) {
             }
         }
     }
-    if (location.pathname == "/") {
+    if (location.pathname == "/dwf-m5-parcel-server") {
         goTo("/welcome")
     }
     else {

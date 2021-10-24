@@ -41,13 +41,10 @@ export function initRouter(container: Element) {
     }
     handleRoute(location.pathname.replace("/dwf-m5-parcel-server/", "/welcome"));
     if (location.pathname == "/dwf-m5-parcel-server/") {
-        goTo("/welcome")
-    }
-    else {
-
-        handleRoute(location.pathname)
+        goTo("/welcome");
     }
     window.onpopstate = function () {
         handleRoute(location.pathname);
     }
 }
+
